@@ -21,7 +21,7 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="16sp"
                 android:layout_weight="1"
-                android:text="Team 1"
+                android:text="Team A"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textSize="16dp" />
@@ -142,7 +142,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.2">
+        android:layout_weight="2">
 
         <LinearLayout
             android:layout_width="match_parent"
