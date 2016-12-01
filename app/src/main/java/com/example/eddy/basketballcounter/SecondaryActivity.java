@@ -14,7 +14,7 @@ import static com.example.eddy.basketballcounter.R.array.colorslist;
 
 public class SecondaryActivity extends AppCompatActivity {
 
-    int i = 0;
+    int i = 1;
     String[] colorsList;
 
     @Override
