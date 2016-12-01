@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
     TextView scoreFirstTeam;
     TextView scoreSecondTeam;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +20,28 @@ public class MainActivity extends AppCompatActivity {
         setTitle("Score counter");
         scoreFirstTeam = (TextView) findViewById(R.id.team_one_score);
         scoreSecondTeam = (TextView) findViewById(R.id.team_two_score);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("score1", teamOneScore);
+        outState.putInt("score2", teamTwoScore);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        scoreFirstTeam.setText(String.valueOf(teamOneScore));
+        scoreSecondTeam.setText(String.valueOf(teamTwoScore));
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        teamOneScore = savedInstanceState.getInt("score1");
+        teamTwoScore = savedInstanceState.getInt("score2");
+
     }
 
     public void onClickNext(View view) {
