@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Score counter");
-        scoreFirstTeam = (TextView) findViewById(R.id.team_one_score);
-        scoreSecondTeam = (TextView) findViewById(R.id.team_two_score);
+        scoreFirstTeam = (TextView) findViewById(R.id.text_team_one_score);
+        scoreSecondTeam = (TextView) findViewById(R.id.text_team_two_score);
     }
 
     @Override
-    public void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("score1", teamOneScore);
         outState.putInt("score2", teamTwoScore);
