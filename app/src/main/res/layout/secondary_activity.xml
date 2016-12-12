@@ -5,14 +5,11 @@
     android:id="@+id/activity_main2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="0dp"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.eddy.basketballcounter.SecondaryActivity">
 
     <TextView
-        android:id="@+id/color_name"
+        android:id="@+id/text_current_color_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -21,7 +18,7 @@
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/background"
+        android:id="@+id/btn_change_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -31,9 +28,9 @@
         android:textStyle="bold" />
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv"
+        android:id="@+id/recyclerView"
         android:scrollbars="vertical"
-        android:layout_below="@+id/background"
+        android:layout_below="@+id/btn_change_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </android.support.v7.widget.RecyclerView>

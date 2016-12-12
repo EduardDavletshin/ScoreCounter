@@ -12,11 +12,11 @@
     <color name="textColor">#000000</color>
 
     <array name="colorslist">
+        <item>@color/background</item>
         <item>@color/deepOrange</item>
         <item>@color/lightOrange</item>
         <item>@color/primaryOrange</item>
         <item>@color/grey</item>
-        <item>@color/background</item>
         <item>@color/purple</item>
         <item>@color/colorPrimary</item>
         <item>@color/colorPrimaryDark</item>
@@ -24,18 +24,18 @@
         <item>@color/primaryGrey</item>
     </array>
 
-    <array name="color_names">
+    <string-array name="color_names">
+        <item>background</item>
         <item>deepOrange</item>
         <item>lightOrange</item>
         <item>primaryOrange</item>
         <item>grey</item>
-        <item>background</item>
         <item>purple</item>
         <item>colorPrimary</item>
         <item>colorPrimaryDark</item>
         <item>textColor</item>
         <item>primaryGrey</item>
-    </array>
+    </string-array>
 
 
 </resources>

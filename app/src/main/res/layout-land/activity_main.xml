@@ -27,7 +27,7 @@
                 android:textSize="16dp" />
 
             <TextView
-                android:id="@+id/team_one_score"
+                android:id="@+id/text_team_one_score"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -36,7 +36,7 @@
                 android:textSize="30sp" />
 
             <Button
-                android:id="@+id/plus_three1"
+                android:id="@+id/btn_plus_three1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="24dp"
@@ -48,7 +48,7 @@
 
 
             <Button
-                android:id="@+id/plus_two1"
+                android:id="@+id/btn_plus_two1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="24dp"
@@ -60,7 +60,7 @@
 
 
             <Button
-                android:id="@+id/free_throw1"
+                android:id="@+id/btn_free_throw1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="24dp"
@@ -75,7 +75,9 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginTop="16dp"
-            android:background="@color/grey"></View>
+            android:background="@color/grey">
+
+        </View>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -84,6 +86,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/text_team_2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="16sp"
@@ -94,7 +97,7 @@
                 android:textSize="16dp" />
 
             <TextView
-                android:id="@+id/team_two_score"
+                android:id="@+id/text_team_two_score"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -103,7 +106,7 @@
                 android:textSize="30sp" />
 
             <Button
-                android:id="@+id/plus_three2"
+                android:id="@+id/btn_plus_three2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="24dp"
@@ -115,7 +118,7 @@
 
 
             <Button
-                android:id="@+id/plus_two2"
+                android:id="@+id/btn_plus_two2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="24dp"
@@ -127,7 +130,7 @@
 
 
             <Button
-                android:id="@+id/free_throw3"
+                android:id="@+id/btn_free_throw2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="24dp"
@@ -151,7 +154,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/reset"
+                android:id="@+id/btn_reset"
                 android:layout_width="0sp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150dp"
@@ -162,7 +165,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/next_activity"
+                android:id="@+id/btn_next_activity"
                 android:layout_width="0sp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="150dp"

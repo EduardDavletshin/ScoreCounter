@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.List;
+
 import static com.example.eddy.basketballcounter.SecondaryActivity.colorNames;
 
 /**
@@ -13,13 +15,12 @@ import static com.example.eddy.basketballcounter.SecondaryActivity.colorNames;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
 
-    public RecyclerViewAdapter(String[] data) {
-        colorNames = data;
+    public RecyclerViewAdapter(List<String> list) {
+        colorNames = list;
     }
 
 
     @Override
-
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.colors_card_view, viewGroup, false);
         ViewHolder viewHolder = new ViewHolder(v);
@@ -28,11 +29,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
-        viewHolder.color.setText(colorNames[position]);
+        viewHolder.color.setText(colorNames.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return colorNames.length;
+        return colorNames.size();
     }
 }
